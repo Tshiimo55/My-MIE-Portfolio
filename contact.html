@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Tshimologo Nchoe</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+
+    
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-logo">
+          <a href="index.html">Tshimologo Nchoe</a>
+        </div>
+
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="cv.html" class="nav-link">CV</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    
+    <main>
+
+      
+      <section class="page-banner" aria-labelledby="contact-heading">
+        <div class="container">
+          <h1 id="contact-heading">Contact Me</h1>
+          <p class="page-banner-subtitle">I'd love to hear from you. Let's connect!</p>
+        </div>
+      </section>
+
+      
+      <section class="contact-section" aria-labelledby="contact-info-heading">
+        <div class="container contact-layout">
+
+          
+          <aside class="contact-info-panel">
+            <h2 id="contact-info-heading" class="section-title">Get In Touch</h2>
+            <p>Feel free to reach out via email or connect with me on LinkedIn or GitHub.</p>
+
+            <ul class="contact-details-list">
+              <li class="contact-detail-item">
+                <h3 class="contact-detail-label">Email</h3>
+                <address>
+                  <a href="mailto:nchoetshimologo@gmail.com" class="contact-link">
+                    nchoetshimologo@gmail.com
+                  </a>
+                </address>
+              </li>
+
+              <li class="contact-detail-item">
+                <h3 class="contact-detail-label">LinkedIn</h3>
+                <a
+                  href="https://linkedin.com/in/tshimologo-nchoe-560973280"
+                  class="contact-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit my LinkedIn profile (opens in new tab)"
+                >
+                  linkedin.com/in/tshimologo-nchoe-560973280
+                </a>
+              </li>
+
+              <li class="contact-detail-item">
+                <h3 class="contact-detail-label">GitHub</h3>
+                <a
+                  href="https://github.com/Tshiimo55"
+                  class="contact-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit my GitHub profile (opens in new tab)"
+                >
+                  github.com/Tshiimo55
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+          <!-- Contact Form -->
+          <section class="contact-form-wrapper" aria-labelledby="form-heading">
+            <h2 id="form-heading" class="section-title">Send a Message</h2>
+
+            <form
+              class="contact-form"
+              id="contact-form"
+              novalidate
+              aria-describedby="form-status"
+            >
+
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Jane Doe"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                />
+                <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="jane@example.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                />
+                <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Write your message here..."
+                  rows="6"
+                  required
+                  aria-required="true"
+                ></textarea>
+                <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary form-submit-btn">
+                  Send Message
+                </button>
+              </div>
+
+              <!-- Success / Error Status Message -->
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+            </form>
+          </section>
+
+        </div>
+      </section>
+
+    </main>
+
+    
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer-copy">&copy; 2026 Tshimologo Nchoe. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Social links">
+          <a href="https://github.com/Tshiimo55" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
+          <a href="https://linkedin.com/in/tshimologo-nchoe-560973280" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
